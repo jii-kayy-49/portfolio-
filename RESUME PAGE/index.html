@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gopi Krishnan | Portfolio</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Gopi Krishnan B, an MCA graduate and aspiring software developer skilled in Python, Java, and Web Technologies.">
+    <meta name="keywords" content="Gopi Krishnan, Portfolio, MCA, Software Developer, Python, JavaScript, Web Developer">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Interactive Background Elements -->
+    <div class="cursor-glow"></div>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <!-- Sticky Navigation -->
+    <header class="navbar">
+        <nav class="container">
+            <div class="logo">
+                <a href="#home">GK<span>.</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-icons-nav">
+                <a href="https://github.com/jii-kayy-49" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gopi-mcagrad/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="container hero-content">
+                <div class="hero-text animate-up">
+                    <span class="greeting">Welcome to my world</span>
+                    <h1>Hi, I'm <span class="highlight">Gopi Krishnan B</span></h1>
+                    <h2 class="typing-container">
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        MCA graduate with a strong foundation in programming, databases, and problem-solving. Passionate about building modern, scalable software solutions.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="Gopi Resume.pdf" download class="btn primary-btn" id="download-cv">Download CV</a>
+                    </div>
+                </div>
+                <div class="hero-image animate-up">
+                    <div class="image-box tilt" data-tilt>
+                        <div class="profile-gradient"></div>
+                        <img src="assets/profilepic.jpeg" alt="Gopi Krishnan B" class="profile-photo">
+                        <div class="placeholder-img" id="photo-container" style="display: none;">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section reveal">
+            <div class="container">
+                <div class="section-title">
+                    <span class="subtitle">Get to know me</span>
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Dedicated <strong>MCA Graduate</strong> from Bharathidasan University with a strong foundation in software engineering and data management. My background in <strong>Mathematics</strong> drive my logical approach to coding and system architecture.
+                        </p>
+                        <p>
+                            I specialize in building full-stack applications using <strong>Python, Flask, and PHP</strong>. I am passionate about creating efficient database operations—whether it's using SQL for relational data or MongoDB for flexible storage.
+                        </p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <span class="info-label">Email:</span>
+                                <span class="info-value">bgopikrishnan2004@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Phone:</span>
+                                <span class="info-value">+91 90436 13746</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Location:</span>
+                                <span class="info-value">Thanjavur, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section reveal">
+            <div class="container">
+                <div class="section-title">
+                    <span class="subtitle">My Expertise</span>
+                    <h2>Technical Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <!-- Programming -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3>Programming</h3>
+                        <ul class="skill-list">
+                            <li>Python <span>Advanced</span></li>
+                            <li>Java <span>Intermediate</span></li>
+                            <li>C / C++ <span>Intermediate</span></li>
+                            <li>JavaScript <span>Intermediate</span></li>
+                        </ul>
+                    </div>
+                    <!-- Web Technology -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Web Tech</h3>
+                        <ul class="skill-list">
+                            <li>HTML5 & CSS3 <span>Expert</span></li>
+                            <li>Frontend Design <span>Advanced</span></li>
+                            <li>Responsive Web <span>Intermediate</span></li>
+                        </ul>
+                    </div>
+                    <!-- Databases & Tools -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3>Databases & Tools</h3>
+                        <ul class="skill-list">
+                            <li>SQL <span>Intermediate</span></li>
+                            <li>MongoDB <span>Intermediate</span></li>
+                            <li>Power BI <span>Intermediate</span></li>
+                            <li>Excel <span>Advanced</span></li>
+                        </ul>
+                    </div>
+                    <!-- Soft Skills -->
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-users"></i></div>
+                        <h3>Soft Skills</h3>
+                        <ul class="skill-list">
+                            <li>Problem Solving</li>
+                            <li>Analytical Reasoning</li>
+                            <li>Critical Thinking</li>
+                            <li>Time Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section reveal">
+            <div class="container">
+                <div class="section-title">
+                    <span class="subtitle">Portfolio</span>
+                    <h2>Featured Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1: Book Loop -->
+                    <article class="project-card tilt" data-tilt>
+                        <div class="project-img bg-gradient-1">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Book Loop</h3>
+                            <p class="project-desc">A robust Flask & MongoDB platform for second-hand book exchange/bidding. Features complex user interaction and community-driven resource sharing.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/jii-kayy-49/book-loop" target="_blank" class="view-link">View Repo <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project 2: Hall Ticket -->
+                    <article class="project-card tilt" data-tilt>
+                        <div class="project-img bg-gradient-2">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Hall Ticket System</h3>
+                            <p class="project-desc">A PHP-based academic management tool for generating secure examination hall tickets. Implements record management and dynamic document generation.</p>
+                            <div class="tech-stack">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>Hack</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/jii-kayy-49/hallticketfinal" target="_blank" class="view-link">View Repo <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project 3: Shutdown Notification -->
+                    <article class="project-card tilt" data-tilt>
+                        <div class="project-img bg-gradient-3">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>EB Shutdown Alert</h3>
+                            <p class="project-desc">Python automation using SMTP to send email alerts before system shutdowns. Integrated with SQLite for efficient logging and data tracking.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>SMTP</span>
+                                <span>SQLite</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/jii-kayy-49/eb-site" target="_blank" class="view-link">View Repo <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section reveal">
+            <div class="container">
+                <div class="section-title">
+                    <span class="subtitle">Journey</span>
+                    <h2>Education</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 - 2026</div>
+                        <div class="timeline-content">
+                            <h3>Master of Computer Applications (MCA)</h3>
+                            <p>Bharathidasan University, Thanjavur</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2021 - 2024</div>
+                        <div class="timeline-content">
+                            <h3>B.Sc Mathematics</h3>
+                            <p>Madras Christian College, Chennai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="certifications section reveal">
+            <div class="container">
+                <div class="section-title">
+                    <span class="subtitle">Learning</span>
+                    <h2>Certifications</h2>
+                </div>
+                <div class="certs-grid">
+                    <div class="cert-item">
+                        <i class="fas fa-chart-pie"></i>
+                        <h4>Power BI Workshop</h4>
+                        <p>OfficeMaster</p>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fab fa-python"></i>
+                        <h4>Python Intermediate</h4>
+                        <p>EduBe</p>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-file-excel"></i>
+                        <h4>Excel Course</h4>
+                        <p>LinkedIn Learning</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section reveal">
+            <div class="container">
+                <div class="section-title">
+                    <span class="subtitle">Reach out</span>
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Connect with me</h3>
+                        <p>I am looking for opportunities to contribute my technical skills to a dynamic growth-oriented organization. Feel free to reach out via email or LinkedIn!</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/gopi-mcagrad/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/jii-kayy-49" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="mailto:bgopikrishnan2004@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gopi Krishnan B. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
