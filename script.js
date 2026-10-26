@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- Typing Effect ---
     const typingText = document.querySelector('.typing-text');
-    const words = ["MCA Graduate", "Aspiring Software Developer", "Python Enthusiast", "Problem Solver"];
+    const words = ["Python Backend Developer", "FastAPI Developer", "MCA Graduate", "Problem Solver"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -90,6 +90,29 @@ document.addEventListener('DOMContentLoaded', () => {
             header.style.background = 'rgba(30, 41, 59, 0.7)';
         }
     });
+
+    // --- Mobile Navigation ---
+    const menuButton = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    if (menuButton && navLinks) {
+        const closeMenu = () => {
+            navLinks.classList.remove('is-open');
+            menuButton.setAttribute('aria-expanded', 'false');
+            menuButton.setAttribute('aria-label', 'Open navigation menu');
+            menuButton.innerHTML = '<i class="fas fa-bars"></i>';
+        };
+
+        menuButton.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('is-open');
+            menuButton.setAttribute('aria-expanded', String(isOpen));
+            menuButton.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+            menuButton.innerHTML = `<i class="fas fa-${isOpen ? 'times' : 'bars'}"></i>`;
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+    }
 
     // --- Smooth Scrolling for Navigation ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
